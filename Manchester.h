@@ -98,7 +98,7 @@ allowing us to transmit even with up to 100% in clock speed difference
 
 #define TimeOutDefault -1 //the timeout in msec default blocks
 
-#ifndef SPARK_CORE
+#ifndef SPARK
 #if defined(ARDUINO) && ARDUINO >= 100
   #include "Arduino.h"
 #else
@@ -170,7 +170,7 @@ extern "C"
 
 extern Manchester man;
 
-#ifdef SPARK_CORE
+#ifdef SPARK
 extern IntervalTimer txmtTimer;
 #endif
 
